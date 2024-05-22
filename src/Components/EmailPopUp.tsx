@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PopUpImg from "../assets/EmailPopupIMG.svg";
 import { IoCloseOutline } from "react-icons/io5";
 
 const Popup = () => {
@@ -16,12 +15,9 @@ const Popup = () => {
       }`}
     >
       {/* Semi-transparent overlay */}
-      <div className="fixed inset-0 flex-col flex lg:flex-row justify-center items-center">
-        <div className="bg-white w-1/2 p-6 rounded shadow-lg">
+      <div className="inset-0 flex-col flex lg:flex-row justify-center items-center">
+        <div className="bg-white mx-24 p-6 rounded shadow-lg">
           <div className="flex">
-            <div id="popup-img">
-              <img src={PopUpImg} alt="" />
-            </div>
             <div>
               <div>
                 <h1 className="font-bold text-5xl text-center mx-24">
