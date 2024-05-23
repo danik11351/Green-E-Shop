@@ -303,7 +303,7 @@ function FeaturedProductsExtension() {
         {/* {Orange card} */}
         <div
           id="orange"
-          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="orange-img">
             <img src={OrangeSmallIMG} alt="orange" className="mt-6 me-3" />
@@ -340,7 +340,7 @@ function FeaturedProductsExtension() {
         {/* {Lettuce card} */}
         <div
           id="Green-Lettuce"
-          className="group justify-around flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="green-lettuce-img">
             <img
@@ -434,7 +434,7 @@ function FeaturedProductsExtension() {
         {/* {Orange card} */}
         <div
           id="orange"
-          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="orange-img">
             <img src={OrangeSmallIMG} alt="orange" className="me-4 mt-3" />
@@ -471,7 +471,7 @@ function FeaturedProductsExtension() {
         {/* {Lettuce card} */}
         <div
           id="Green-Lettuce"
-          className="group justify-around flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="green-lettuce-img">
             <img
@@ -523,7 +523,7 @@ function FeaturedProductsExtension() {
         {/* {apple card} */}
         <div
           id="green-apple"
-          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="green-apple-img">
             <img
@@ -564,7 +564,7 @@ function FeaturedProductsExtension() {
         {/* {Orange card} */}
         <div
           id="orange"
-          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="orange-img">
             <img src={OrangeSmallIMG} alt="orange" className="me-4 mt-3" />
@@ -601,7 +601,7 @@ function FeaturedProductsExtension() {
         {/* {Lettuce card} */}
         <div
           id="Green-Lettuce"
-          className="group justify-around flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400  lg:hover:shadow-xl"
         >
           <div id="green-lettuce-img">
             <img

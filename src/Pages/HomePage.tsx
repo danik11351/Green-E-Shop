@@ -1,7 +1,8 @@
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
+import { Blog } from "../Components/Blog";
 import { CatagoriesMobileScreen } from "../Components/CatagoriesMobileScreen";
-import { Counter } from "../Components/Counter";
+import { Counter, SalesCounter } from "../Components/Counter";
 import Popup from "../Components/EmailPopUp";
 import {
   FeaturedProducts,
@@ -27,6 +28,8 @@ function HomePage() {
       <CatagoriesMobileScreen />
       <TrustedSource />
       <Counter />
+      <SalesCounter />
+      <Blog />
     </div>
   );
 }
