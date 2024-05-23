@@ -11,6 +11,7 @@ import {
 import { HeroSection, HeroSectionUnderCards } from "../Components/HeroSection";
 import { LargeScreenNavBar } from "../Components/NavBar";
 import { ShopByCatagories } from "../Components/ShopByCatagories";
+import { Testimonials } from "../Components/Testimonials";
 import { TrustedSource } from "../Components/TrustedSource";
 
 function HomePage() {
@@ -30,6 +31,7 @@ function HomePage() {
       <Counter />
       <SalesCounter />
       <Blog />
+      <Testimonials />
     </div>
   );
 }
