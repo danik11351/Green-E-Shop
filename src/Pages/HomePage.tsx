@@ -1,3 +1,4 @@
+import { Footer } from "../Components/Footer";
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
 import { Blog } from "../Components/Blog";
@@ -11,7 +12,7 @@ import {
 import { HeroSection, HeroSectionUnderCards } from "../Components/HeroSection";
 import { LargeScreenNavBar } from "../Components/NavBar";
 import { ShopByCatagories } from "../Components/ShopByCatagories";
-import { Testimonials } from "../Components/Testimonials";
+import { Testimonials, WorkingWithUs } from "../Components/Testimonials";
 import { TrustedSource } from "../Components/TrustedSource";
 
 function HomePage() {
@@ -32,6 +33,8 @@ function HomePage() {
       <SalesCounter />
       <Blog />
       <Testimonials />
+      <WorkingWithUs />
+      <Footer />
     </div>
   );
 }
