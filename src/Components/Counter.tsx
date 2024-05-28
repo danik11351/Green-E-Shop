@@ -74,7 +74,7 @@ const ScrollCounter = () => {
 };
 function SalesCounter() {
   return (
-    <div className="flex mt-12 justify-around relative mx-auto ">
+    <div className=" mt-12 justify-around relative mx-auto hidden lg:flex ">
       <div id="sales-container-1">
         <div>
           <img src={Sales1BG} alt="" />

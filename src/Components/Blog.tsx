@@ -8,15 +8,11 @@ import { MdOutlineInsertComment } from "react-icons/md";
 
 function Blog() {
   return (
-    <div
-      style={{
-        backgroundImage: "url(BlogBackGround.svg)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        height: "80vh",
-      }}
-    >
-      <div id="blogs-container" className="flex justify-center p-24 gap-12">
+    <div>
+      <div
+        id="blogs-container"
+        className="flex flex-col lg:flex-row justify-center p-24 gap-12"
+      >
         <div id="blog-1">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">

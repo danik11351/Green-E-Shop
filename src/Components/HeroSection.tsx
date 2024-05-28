@@ -15,7 +15,7 @@ function HeroSection() {
           backgroundRepeat: "no-repeat",
           backgroundColor: "#EDF2EE",
         }}
-        className="flex flex-col lg:flex-row justify-center"
+        className="flex flex-col lg:flex-row justify-center "
       >
         <div id="hero-section-img-basket">
           <img

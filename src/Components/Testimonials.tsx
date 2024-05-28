@@ -6,7 +6,7 @@ import { Rating } from "flowbite-react";
 import CompanyLogo from "../assets/company logos/logo-3.svg";
 function Testimonials() {
   return (
-    <div className="bg-gradient-to-b from-slate-50 to-green-50">
+    <div className="bg-gradient-to-b from-slate-50 to-green-50 hidden lg:block lg:mt-0">
       <div className="text-center">
         <div>
           <p className="text-green-500 text-xl ">Testimonial</p>
@@ -484,7 +484,10 @@ function Testimonials() {
 }
 function WorkingWithUs() {
   return (
-    <div id="working-with-us-container" className="flex justify-around p-12">
+    <div
+      id="working-with-us-container"
+      className=" justify-around p-12 hidden lg:flex"
+    >
       <div id="company-1">
         <img className="hover:scale-125 transition" src={CompanyLogo} alt="" />
       </div>

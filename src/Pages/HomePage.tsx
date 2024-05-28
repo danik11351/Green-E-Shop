@@ -1,4 +1,4 @@
-import { Footer } from "../Components/Footer";
+import { Footer, FooterPayments } from "../Components/Footer";
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
 import { Blog } from "../Components/Blog";
@@ -35,6 +35,20 @@ function HomePage() {
       <Testimonials />
       <WorkingWithUs />
       <Footer />
+      <div
+        style={{
+          backgroundColor: "999999",
+        }}
+      >
+        <hr
+          style={{
+            margin: "0",
+          }}
+          id="green-seperator"
+          className="w-0"
+        />
+      </div>
+      <FooterPayments />
     </div>
   );
 }
