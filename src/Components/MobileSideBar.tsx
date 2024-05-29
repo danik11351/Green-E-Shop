@@ -158,7 +158,9 @@ function SideBarMobile() {
                       );
                     }}
                   >
-                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">
+                      <a href="/Catagories">Catagories</a>
+                    </Sidebar.Item>
                     <Sidebar.Item href="#">example</Sidebar.Item>
                     <Sidebar.Item href="#">example</Sidebar.Item>
                     <Sidebar.Item href="#">example</Sidebar.Item>

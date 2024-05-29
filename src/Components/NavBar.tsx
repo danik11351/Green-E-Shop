@@ -24,7 +24,18 @@ function LargeScreenNavBar() {
           {/* {Large nav-bar pages button} */}
           <a href="#">
             <Dropdown inline color="grey" label="Pages" dismissOnClick={false}>
-              <Dropdown.Item>Example</Dropdown.Item>
+              <Dropdown.Item>
+                <Dropdown
+                  inline
+                  color="grey"
+                  label="catagories"
+                  placement="right"
+                >
+                  <Dropdown.Item>
+                    <a href="/Vegetables">Vegetables</a>
+                  </Dropdown.Item>
+                </Dropdown>
+              </Dropdown.Item>
               <Dropdown.Item>Example</Dropdown.Item>
               <Dropdown.Item>Example</Dropdown.Item>
             </Dropdown>
