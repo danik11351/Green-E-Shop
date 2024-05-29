@@ -3,12 +3,23 @@ import { AboveNavBarLargeScreen, AboveNavBarMobile } from "./AboveNavBar";
 import { LargeScreenNavBar } from "./NavBar";
 import { GoHome } from "react-icons/go";
 import { RiArrowDropRightLine } from "react-icons/ri";
+import { FaTimes } from "react-icons/fa";
 import SalesBanner from "../assets/VegtablesPage assets/VegtablesSaleBanner.svg";
-import Select from "react-select";
-import { Label } from "flowbite-react";
+import Select, { SingleValue, ActionMeta } from "react-select";
 
-// {MinPrice selector}
-const MinPrice = [
+// Define types for the filter options and selected filters
+interface FilterOption {
+  value: string;
+  label: string;
+}
+
+interface SelectedFilter {
+  name: string;
+  value: FilterOption;
+}
+
+// Filter options
+const MinPrice: FilterOption[] = [
   { value: "0", label: "0" },
   { value: "5", label: "5" },
   { value: "15", label: "15" },
@@ -16,8 +27,8 @@ const MinPrice = [
   { value: "60", label: "60" },
   { value: "120", label: "120" },
 ];
-// {MaxPrice selector}
-const MaxPrice = [
+
+const MaxPrice: FilterOption[] = [
   { value: "0", label: "0" },
   { value: "5", label: "5" },
   { value: "15", label: "15" },
@@ -25,8 +36,8 @@ const MaxPrice = [
   { value: "60", label: "60" },
   { value: "120", label: "120" },
 ];
-// {Rating Selector}
-const Rating = [
+
+const Rating: FilterOption[] = [
   { value: "1", label: "1" },
   { value: "2", label: "2" },
   { value: "3", label: "3" },
@@ -34,12 +45,12 @@ const Rating = [
   { value: "5", label: "5" },
 ];
 
-const SortBy = [
+const SortBy: FilterOption[] = [
   { value: "LowestPrice", label: "Lowest Price" },
   { value: "HighestPrice", label: "Highest Price" },
 ];
 
-const ShowMax = [
+const ShowMax: FilterOption[] = [
   { value: "5", label: "5" },
   { value: "10", label: "10" },
   { value: "15", label: "15" },
@@ -47,9 +58,13 @@ const ShowMax = [
 ];
 
 function Vegetables() {
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [selectedFilters, setSelectedFilters] = useState<SelectedFilter[]>([]);
 
-  const handleFilterChange = (selectedOption, { name }) => {
+  const handleFilterChange = (
+    selectedOption: SingleValue<FilterOption>,
+    actionMeta: ActionMeta<FilterOption>
+  ) => {
+    const { name } = actionMeta;
     setSelectedFilters((prev) => {
       const updatedFilters = prev.filter((filter) => filter.name !== name);
       if (selectedOption) {
@@ -59,7 +74,7 @@ function Vegetables() {
     });
   };
 
-  const handleRemoveFilter = (name) => {
+  const handleRemoveFilter = (name: string) => {
     setSelectedFilters((prev) => prev.filter((filter) => filter.name !== name));
   };
 
@@ -145,21 +160,29 @@ function Vegetables() {
           </div>
         </div>
       </div>
-      <div className="selected-filters mt-8 mx-14">
-        {selectedFilters.map((filter) => (
-          <div key={filter.name} className="flex items-center gap-2 mb-2">
-            <p className="text-gray-500">
-              {filter.name}: {filter.value.label}
-            </p>
-            <button
-              className="text-red-500"
-              onClick={() => handleRemoveFilter(filter.name)}
-            >
-              Remove
-            </button>
+      {selectedFilters.length > 0 && (
+        <div className="mt-8 mx-14">
+          <h2 className="text-xl mb-2">Active Filters</h2>
+          <div className="selected-filters flex flex-row gap-2">
+            {selectedFilters.map((filter) => (
+              <div
+                key={filter.name}
+                className="flex items-center gap-2 mb-2 p-2 border border-gray-300 rounded"
+              >
+                <p className="text-gray-500">
+                  {filter.name}: {filter.value.label}
+                </p>
+                <button
+                  className="text-red-500"
+                  onClick={() => handleRemoveFilter(filter.name)}
+                >
+                  <FaTimes className="w-4 h-4" />
+                </button>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
